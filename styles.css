@@ -6,12 +6,12 @@
 }
 
 :root {
-    --primary-color: #1b3b6f;
-    --secondary-color: #e74c3c;
-    --accent-color: #3498db;
-    --text-color: #333;
-    --light-text: #666;
-    --background-color: #f8f9fa;
+    --primary-color: #1e3a5f;        /* Navy */
+    --secondary-color: #2ecc71;      /* Forest Green */
+    --accent-color: #3498db;         /* Sky Blue */
+    --text-color: #2c3e50;
+    --light-text: #7f8c8d;
+    --background-color: #ecf0f1;
     --border-color: #e0e0e0;
     --white: #ffffff;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
