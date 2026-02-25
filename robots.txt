@@ -1,0 +1,18 @@
+# Robots.txt file for SEO
+
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.professionaloffice.com/sitemap.xml

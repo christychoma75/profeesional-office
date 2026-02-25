@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Professional Office - Get in touch with our team">
+    <title>Contact Us - Professional Office</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1>Professional Office</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you. Get in touch with our team today.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    
+                    <div class="info-item">
+                        <h4>Office Address</h4>
+                        <p>
+                            123 Business Avenue<br>
+                            Corporate Plaza, Suite 500<br>
+                            New York, NY 10001<br>
+                            United States
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Phone</h4>
+                        <p>
+                            Main: <a href="tel:+15551234567">(555) 123-4567</a><br>
+                            Toll-Free: <a href="tel:+18005551234">1-800-555-1234</a><br>
+                            Fax: (555) 123-4568
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Email</h4>
+                        <p>
+                            General: <a href="mailto:info@professionaloffice.com">info@professionaloffice.com</a><br>
+                            Support: <a href="mailto:support@professionaloffice.com">support@professionaloffice.com</a><br>
+                            Sales: <a href="mailto:sales@professionaloffice.com">sales@professionaloffice.com</a>
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Business Hours</h4>
+                        <p>
+                            Monday - Friday: 9:00 AM - 6:00 PM EST<br>
+                            Saturday: 10:00 AM - 4:00 PM EST<br>
+                            Sunday: Closed<br>
+                            <span class="highlight">24/7 Emergency Support Available</span>
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Follow Us</h4>
+                        <div class="social-links vertical">
+                            <a href="#" title="LinkedIn">LinkedIn</a>
+                            <a href="#" title="Twitter">Twitter</a>
+                            <a href="#" title="Facebook">Facebook</a>
+                            <a href="#" title="Instagram">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="services">Services Information</option>
+                                <option value="support">Support Request</option>
+                                <option value="quote">Request a Quote</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">I agree to the privacy policy and terms of service</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Placeholder) -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Visit Our Office</h2>
+            <div class="map-placeholder">
+                <p>📍 123 Business Avenue, New York, NY 10001</p>
+                <p style="font-size: 0.9em; margin-top: 10px; color: #666;">Map view would be displayed here (replace with actual map integration)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How quickly will I hear back from you?</h4>
+                    <p>We typically respond to inquiries within 24 business hours. For urgent matters, please call our main office line.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer free consultations?</h4>
+                    <p>Yes! We offer a complimentary 30-minute consultation to discuss your business needs and how we can help.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What is your service area?</h4>
+                    <p>We serve clients nationwide and internationally. Contact us to discuss your specific location needs.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I customize a service package?</h4>
+                    <p>Absolutely! All our service packages can be customized to meet your unique business requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Professional Office</h4>
+                    <p>Delivering quality business solutions since 2020</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Get in Touch</h4>
+                    <p>Email: info@professionaloffice.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" title="LinkedIn">LinkedIn</a>
+                        <a href="#" title="Twitter">Twitter</a>
+                        <a href="#" title="Facebook">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Professional Office. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
