@@ -53,12 +53,10 @@ function setActiveNavLink() {
 
 setActiveNavLink();
 
-// Contact Form Handling
+// Contact Form Handling (with Netlify Forms support)
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Get form data
+        // Get form data for client-side validation
         const formData = new FormData(contactForm);
         
         // Validate form
@@ -73,32 +71,31 @@ if (contactForm) {
         
         if (!name || !email || !message) {
             showFormMessage('Please fill in all required fields', 'error');
+            e.preventDefault();
             return;
         }
         
         if (!isValidEmail(email)) {
             showFormMessage('Please enter a valid email address', 'error');
+            e.preventDefault();
             return;
         }
         
         if (!privacy) {
             showFormMessage('Please agree to the privacy policy and terms of service', 'error');
+            e.preventDefault();
             return;
         }
         
-        // Simulate form submission
+        // If validation passes, show success message and let Netlify submit
         const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
         
-        // Simulate API call with timeout
+        // Show success message
         setTimeout(() => {
             showFormMessage('Thank you for your message! We will get back to you shortly.', 'success');
-            contactForm.reset();
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }, 1500);
+        }, 500);
     });
 }
 
